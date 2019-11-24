@@ -21,7 +21,7 @@ At the moment, Quiver doesn't support converting multiple notebooks at once so y
 You will see an exported folder titled to follow the notebook name which has all notes converted into html files. What I refer as notebooks from now refers to this notebook folder.
 
 3. ### Place the exported notebooks inside either `static/categories` or `static/notebook` .
-#### `static/categories`
+#### 	•`static/categories`
 
 The `static/categories` folder is for notebooks that you want to put together. Notebooks will show up under collapsible lists.
 
@@ -36,7 +36,7 @@ For example, make a directory named `javascript` inside `categories` folder and 
 
 ![enter image description here](https://i.imgur.com/3qAb98d.png)
 
-#### `static/notebook`
+#### 	•`static/notebook`
 	
 
 Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
