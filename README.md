@@ -7,7 +7,7 @@ This is a web project started with the aim of mirroring [Quiver](https://happena
 
 The backside was written in <b>[Python 3](https://www.python.org/downloads/)</b> with <b>[Flask](http://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)</b> framework, so these should be installed before running the app. 
 
-You can run the app as it is with all most notebooks, but of course you want to show yours not mine! So here's the instruction.
+You can run the app as it is with all my notebooks, but of course, you want to show yours not mine! So here's the instruction.
 
 ###  Instructions
 
