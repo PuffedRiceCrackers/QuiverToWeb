@@ -1,3 +1,7 @@
+<h2>QuiverToWeb</h2>
+
+
+
 This is a blog template made with the aim of mirroring [Quiver](https://happenapps.com/%29)'s appearance on a web page. It was based on a nice simple web template from [Truong Tran](https://codepen.io/truongtx-ccvn/pen/qLXGKV) and I added extra javascript code and python code so that it can accommodate Quiver html files seamlessly with little effort on the user side.
 
 ![enter image description here](https://i.imgur.com/FLkHTu0.gif)
@@ -30,7 +34,7 @@ For example, make a directory named `javascript` inside `categories` folder and 
 
 ![enter image description here](https://i.imgur.com/3qAb98d.png =400x)
 
-• <b>static/notebook
+• <b>static/notebook</b>
 
 Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
 
@@ -49,7 +53,7 @@ if __name__ ==  '__main__':
 
 ### Things that I hope to add in the future
 
-• There must be at least one notebook folder inside `static/notebook` which isn't elegant.
-• When you click one of the notebooks on the sidebar, javascript will pass data about how much you scrolled within the sidebar and show the sidebar exactly how you left when a new page is loaded. But this doesn't work when you clicked one of the notebooks within a category yet :/
-• For some reason, when you run this app on Chrome or Firefox, the sidebar doesn't have the nice, default over-scroll animation you see on Safari.
-• I want to turn it as robust as possible so that it doesn't crash due to just one or two things missing. 
+• There must be at least one notebook folder inside `static/notebook` which isn't elegant. <br />
+• When you click one of the notebooks on the sidebar, javascript will pass data about how much you scrolled within the sidebar and show the sidebar exactly how you left when a new page is loaded. But this doesn't work when you clicked one of the notebooks within a category yet :/ <br />
+• For some reason, when you run this app on Chrome or Firefox, the sidebar doesn't have the nice, default over-scroll animation you see on Safari. <br />
+• I want to turn it as robust as possible so that it doesn't crash due to just one or two things missing.  <br />
