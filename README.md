@@ -33,7 +33,7 @@ For example, make a directory named `javascript` inside `categories` folder and 
 
 ![enter image description here](https://i.imgur.com/3qAb98d.png =400x)
 
-• <b>static/notebook
+• <b>static/notebook</b>
 
 Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
 
