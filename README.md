@@ -22,12 +22,12 @@ You will see an exported folder titled to follow the notebook name which has all
 
 3. ### Place the exported notebooks inside either `static/categories` or `static/notebook` .
  <br />
-	• <b>static/categories </b>
+	• `<b>static/categories </b>`
 
 The `categories` folder is for notebooks that you want to put together. Notebooks will show up under collapsible lists.
 
 
-![enter image description here](https://i.imgur.com/6qiROvQ.gif =100x20)
+![enter image description here](https://i.imgur.com/6qiROvQ.gif)
 
 
 You must <b>make a new directory inside the `categories` directory first</b> and then put related notebooks inside the new folder, because we want to have a title for the grouped notebooks! 
@@ -35,10 +35,10 @@ You must <b>make a new directory inside the `categories` directory first</b> and
 For example, make a directory named `javascript` inside `categories` folder and put javascript related notebooks like `grammar` and `usage` inside it.  `grammar` and `usage` will show up under the collapsible element `javascript`. It supports one-level hierarchy only.
 
 
-![enter image description here](https://i.imgur.com/3qAb98d.png =100x20)
+![enter image description here](https://i.imgur.com/3qAb98d.png)
 
  <br />
-	• <b>static/notebook</b>
+	• `<b>static/notebook</b>`
 
 Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
 
