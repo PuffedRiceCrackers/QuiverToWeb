@@ -50,7 +50,7 @@ Once you run the app, you want to comment out  `cssEditor()`   in `app.py` to av
 
 ```
 if __name__ ==  '__main__':
-	# Comment out cssEditor() except for the first run
+	# Comment out cssEditor() after the first run
 	cssEditor()
 	...
 ```
