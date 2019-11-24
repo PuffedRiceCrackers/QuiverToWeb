@@ -56,7 +56,7 @@ if __name__ ==  '__main__':
 
 ### Things that I hope to add in the future
 
-• There must be at least one notebook folder inside `static/notebook` which isn't elegant. <br />
+• Currently, at least one notebook inside `static/notebook` is required for the code to run, which is not optimal. <br />
 • When you click one of the notebooks on the sidebar, javascript will pass data about how much you scrolled within the sidebar and show the sidebar exactly how you left when a new page is loaded. But this doesn't work when you clicked one of the notebooks within a category yet :/ <br />
-• For some reason, when you run this app on Chrome or Firefox, the sidebar doesn't have the nice, default over-scroll animation you see on Safari. <br />
-• I want to turn it as robust as possible so that it doesn't crash due to just one or two things missing.  <br />
+• For some reason, the sidebar doesn't have the nice, default over-scroll animation on Chrome and Firefox unlike the one in Safari.<br />
+• I hope to turn it as robust as possible so that it doesn't crash due to just one or two things missing.  <br />
