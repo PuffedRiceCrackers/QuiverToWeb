@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Collapsible sidebar using Bootstrap 3</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='stylesheets/style.css') }}">
+        <script>
+            var previousPost = null;
+            document.addEventListener('DOMContentLoaded', function () {
+
+                // Store and set the scroll position
+                document.getElementById("sidebar").scrollTop = "{{verticalPos}}";
+                var sendVerticalPos = function(e){
+                  var originalLink = (e.toElement.attributes)[2].nodeValue;
+                  var id = e.target.id;
+                  var scrollPos = document.getElementById("sidebar").scrollTop;
+                  document.getElementById(id).setAttribute("href", originalLink + "&verticalPos=" + scrollPos);
+                };
+                var notebook = document.getElementsByClassName("notebook");
+                for (var i = 0; i < notebook.length; i++) {
+                    notebook[i].addEventListener('click', sendVerticalPos);
+                }
+
+                // Update content when a post is clicked
+                var showPost = function() {
+                    var ps = {{ postSource|safe }};
+                    var idOfPost = this.id;
+                    var iframe = document.getElementById("serviceFrameSend");
+                    iframe.setAttribute("src", ps[idOfPost]);
+                    if (previousPost != null){
+                        previousPost.style.backgroundColor = '#2b3137';
+                    };
+                    this.style.backgroundColor = '#343a40';
+                    previousPost = this;
+                };
+                var postlist = document.getElementsByClassName("postlist");
+                for (var i = 0; i < postlist.length; i++) {
+                    postlist[i].addEventListener('click', showPost, false);
+                }
+
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            // Color highlight for current notebook
+            document.addEventListener('DOMContentLoaded', function () {
+                var lastOpenedNotebook = "{{lastOpenedNotebook}}";
+                var lastOpenedCategory = "{{lastOpenedCategory}}";
+                if (lastOpenedCategory!=null){
+                    $('#'+lastOpenedCategory).collapse('show');
+                };
+                document.getElementById(lastOpenedCategory+"_"+lastOpenedNotebook).style["background-color"] = "#386892";
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- (1) Sidebar-->
+            <nav id="sidebar">
+                <!--Logo on the top left-->
+                <div class="sidebar-header">
+                    <div class="inside">
+                        <h3>{{yourBlogName}}</h3>
+                    </div>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <!--Collapsible Notebook-->
+                    {% for category in categories %}
+                      <li class="active">
+                        <a href="#{{category[1]}}" data-toggle="collapse" aria-expanded="false">{{category[0]}}</a>
+                          <ul class="collapse list-unstyled" id="{{category[1]}}">
+                              {% for notebook in category_notebooks[loop.index0] %}
+                                <li class="categoryList">
+                                  <a class="innerCategoryList" id="{{category[1]}}_{{notebook[1]}}" href="/{{notebook[1]}}?isInCategory=true&category={{category[1]}}&lastOpenedCategory={{category[1]}}&lastOpenedNotebook={{notebook[1]}}">{{notebook[0]}}</a>
+                                </li>
+                              {% endfor %}
+                          </ul>
+                      </li>
+                    {% endfor %}
+                    <!--Notebook-->
+                    {% for item in notebooks %}
+                      <li>
+                          <a class="notebook" id="null_{{item[1]}}" href="/{{item[1]}}?isInCategory=false&lastOpenedCategory=null&lastOpenedNotebook={{item[1]}}">{{item[0]}}</a>
+                      </li>
+                    {% endfor %}
+                </ul>
+                <ul class="list-unstyled CTAs">
+                </ul>
+            </nav>
+        </div>
+
+        <!-- (2) Postbar -->
+        <nav id="postbar">
+            <div id="notebook_title">{{currNoteBook}}</div>
+            <ul class="list-unstyled components">
+                {% for item in postTitle %}
+                  <li>
+                      <a class=postlist id="{{item[0]}}">{{item[1]}}</a>
+                  </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <!-- (3) Contents -->
+        <div id="content">
+            <iframe scrolling="yes" id="serviceFrameSend" src="{{firstPage}}" style="height:100%;width:100%;" frameborder="0" _={{currTime}}>
+        </div>
+    </body>
+</html>
