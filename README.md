@@ -1,13 +1,10 @@
-# QuiverToWeb
-
-
-This is a web project started with the aim of mirroring [Quiver](https://happenapps.com/%29)'s appearance on a web page. It was based on a nice simple web template from [Truong Tran](https://codepen.io/truongtx-ccvn/pen/qLXGKV) and I added extra javascript code and python code so that it can accommodate Quiver html files seamlessly with little effort on the user side.
+This is a blog template made with the aim of mirroring [Quiver](https://happenapps.com/%29)'s appearance on a web page. It was based on a nice simple web template from [Truong Tran](https://codepen.io/truongtx-ccvn/pen/qLXGKV) and I added extra javascript code and python code so that it can accommodate Quiver html files seamlessly with little effort on the user side.
 
 ![enter image description here](https://i.imgur.com/FLkHTu0.gif)
 
 The backside was written in <b>[Python 3](https://www.python.org/downloads/)</b> with <b>[Flask](http://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)</b> framework, so these should be installed before running the app. 
 
-You can run the app as it is with all my notebooks, but of course, you want to show yours not mine! So here's the instruction.
+You can run the app as it is with included my notebooks, but of course we want to show yours not mine! So here's the instruction.
 
 ###  Instructions
 
@@ -33,7 +30,7 @@ For example, make a directory named `javascript` inside `categories` folder and 
 
 ![enter image description here](https://i.imgur.com/3qAb98d.png =400x)
 
-• <b>static/notebook</b>
+• <b>static/notebook
 
 Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
 
