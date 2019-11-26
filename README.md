@@ -10,18 +10,18 @@ The backside was written in <b>[Python 3](https://www.python.org/downloads/)</b>
 You can run the app as it is with the included notebooks of mine, but of course we want to show yours not mine! So here's the instruction.
 
 <h2>Instructions</h2>
+  
+1. ### Make sure you have Python 3 and Flask installed  
 
-1. ### Make sure you have Python 3 and Flask installed\
-
-2. ### Convert your notebook to html\
+2. ### Convert your notebook to html  
 
 At the moment, Quiver doesn't support converting multiple notebooks at once so you need to individually convert your notebooks within the app. It also doesn't support nesting of notebooks but I added a way to make a group of notebooks as the alternative.
 ◦ Right-Click the notebook → "Export Notebook" → "As HTML" <br /> 
 
 You will see an exported folder titled to follow the notebook name which has all notes converted into html files. What I refer as notebooks from now refers to this notebook folder.
-
+  
 3. ### Place the exported notebooks inside either `static/categories` or `static/notebook` .
-#### 	•`static/categories`\
+#### 	•`static/categories`  
 
 The `static/categories` folder is for notebooks that you want to put together. Notebooks will show up under collapsible lists.
 
@@ -40,8 +40,8 @@ For example, make a directory named `javascript` inside `categories` folder and 
 	
 
 Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
- 
-4. ### Run the app\
+  
+4. ### Run the app  
 
 Run `app.py` within the project directory. First time you run the app, it edits style of html files you put inside `static/categories` and `static/notebook` with `cssEditor` module and then collect notebook lists to show. 
 
