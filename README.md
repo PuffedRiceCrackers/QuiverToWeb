@@ -7,7 +7,7 @@ This is a blog template made with the aim of mirroring [Quiver](https://happenap
 
 The backside was written in <b>[Python 3](https://www.python.org/downloads/)</b> with <b>[Flask](http://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)</b> framework, so these should be installed before running the app. 
 
-You can run the app as it is with include notebooks of mine, but of course we want to show yours not mine! So here's the instruction.
+You can run the app as it is with the included notebooks of mine, but of course we want to show yours not mine! So here's the instruction.
 
 ###  Instructions
 
