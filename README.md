@@ -38,7 +38,7 @@ For example, make a directory named `javascript` inside `categories` folder and 
 
 <h4>• static/notebook</h4>
 
-Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. <b>There should be at least one notebook folder in `static/notebook`</b>.
+Put notebooks that don't belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. <b>There should be at least one notebook folder in `static/notebook`</b>.
   
 4. ### Run the app  
 
