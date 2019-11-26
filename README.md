@@ -15,7 +15,7 @@ You can run the app as it is with the included notebooks of mine, but of course 
 
 2. ### Convert your notebook to html  
 
-At the moment, Quiver doesn't support converting multiple notebooks at once so you need to individually convert your notebooks within the app. It also doesn't support nesting of notebooks but I added a way to make a group of notebooks as the alternative.
+>> At the moment, Quiver doesn't support converting multiple notebooks at once so you need to individually convert your notebooks within the app. It also doesn't support nesting of notebooks but I added a way to make a group of notebooks as the alternative.
 ◦ Right-Click the notebook → "Export Notebook" → "As HTML" <br /> 
 
 You will see an exported folder titled to follow the notebook name which has all notes converted into html files. What I refer as notebooks from now refers to this notebook folder.
