@@ -26,9 +26,7 @@ You will see an exported folder titled to follow the notebook name which has all
 The `static/categories` folder is for notebooks that you want to put together. Notebooks will show up under collapsible lists.
 
 
-![enter image description here](https://i.imgur.com/6qiROvQ.gif)
-
-<img src="https://i.imgur.com/6qiROvQ.gif" height="24" width="48">
+<img src="https://i.imgur.com/6qiROvQ.gif" width="150">
 
 
 You must <b>make a new directory inside the `categories` directory first</b> and then put related notebooks inside the new folder, because we want to have a title for the grouped notebooks! 
