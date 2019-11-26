@@ -9,7 +9,7 @@ The backside was written in <b>[Python 3](https://www.python.org/downloads/)</b>
 
 You can run the app as it is with the included notebooks of mine, but of course we want to show yours not mine! So here's the instruction.
 
-###  Instructions
+<h3>Instructions</h3>
 
 1. ### Make sure you have Python 3 and Flask installed
 
