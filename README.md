@@ -21,20 +21,18 @@ You can run the app as it is with the included notebooks of mine, but of course 
 	You will see an exported folder titled to follow the notebook name which has all notes converted into html files. What I refer as notebooks from now refers to this notebook folder.
   
 3. ### Place the exported notebooks inside either `static/categories` or `static/notebook` .
-•`static/categories`
-	The `static/categories` folder is for notebooks that you want to put together. Notebooks will show up under collapsible lists.
 
+	•`static/categories`
 
-<img src="https://i.imgur.com/6qiROvQ.gif" width="450" align="center">
+The `static/categories` folder is for notebooks that you want to put together. Notebooks will show up under collapsible lists.
 
-You must <b>make a new directory inside the `categories` directory first</b> and then put related notebooks inside the new folder, because we want to have a title for the grouped notebooks! 
-
-For example, make a directory named `javascript` inside `categories` folder and put javascript related notebooks like `grammar` and `usage` inside it.  `grammar` and `usage` will show up under the collapsible element `javascript`. It supports one-level hierarchy only.
+<img src="https://i.imgur.com/6qiROvQ.gif" width="450" align="center">	You must <b>make a new directory inside the `categories` directory first</b> and then put related notebooks inside the new folder, because we want to have a title for the grouped notebooks!	For example, make a directory named `javascript` inside `categories` folder and put javascript related notebooks like `grammar` and `usage` inside it.  `grammar` and `usage` will show up under the collapsible element `javascript`. It supports one-level hierarchy only.
 
 <img src="https://i.imgur.com/3qAb98d.png" width="450" align="center">
 
-• `static/notebook`
-	Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
+	• `static/notebook`
+
+Put exported notebook that belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. There should be at least one notebook folder in `notebook` ou don't need to have a category, but there should be at least one 
   
 4. ### Run the app  
 
