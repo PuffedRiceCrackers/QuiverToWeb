@@ -1,4 +1,4 @@
-<h2>QuiverToWeb</h2>
+<h1>QuiverToWeb</h1>
 
 
 This is a blog template made with the aim of mirroring [Quiver](https://happenapps.com)'s appearance on a web page for Quiver users. It was based on a nice simple web template from [Truong Tran](https://codepen.io/truongtx-ccvn/pen/qLXGKV) and I added extra javascript code and python code so that it can accommodate Quiver html files seamlessly with little effort on the user side.
