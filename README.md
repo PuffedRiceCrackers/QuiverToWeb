@@ -27,8 +27,8 @@ The `static/categories` folder is for notebooks that you want to put together. N
 
 
 ![enter image description here](https://i.imgur.com/6qiROvQ.gif)
-![test image size](https://i.imgur.com/6qiROvQ.gif | width=48)
 
+<img src="https://i.imgur.com/6qiROvQ.gif" height="24" width="48">
 
 
 You must <b>make a new directory inside the `categories` directory first</b> and then put related notebooks inside the new folder, because we want to have a title for the grouped notebooks! 
