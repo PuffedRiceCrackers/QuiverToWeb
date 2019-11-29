@@ -46,7 +46,7 @@ Put notebooks that don't belong to a category inside `static/notebook`. It will 
 
 	Once you run the app, you want to comment out  `cssEditor()`   in `app.py` to avoid editing css styles multiple times although it won't cause any crash.<br /><br />
 
-```
+```python
 if __name__ ==  '__main__':
 	# Comment out cssEditor() after the first run
 	cssEditor()
