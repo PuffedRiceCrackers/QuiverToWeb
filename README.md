@@ -42,6 +42,15 @@ Put notebooks that don't belong to a category inside `static/notebook`. It will 
   
 3. ### Customize the variables (Optional)
 	#### `app.py`
+	
+```python
+##################customize#################
+YOUR_BLOG_NAME = "Puffed\nRice\nCracker"
+YOUR_TAB_NAME = "Puffed Rice Cracker"
+DEFAULT_NOTEBOOK_NAME = "ChromePRCextension" # Chrome extension
+############################################
+```	
+
 	* `YOUR_BLOG_NAME` : The string you see at the top left of a page. 
 	* `YOUR_TAB_NAME` : The string you see in the tab
 	* `DEFAULT_NOTEBOOK_NAME`:
@@ -52,14 +61,6 @@ Put notebooks that don't belong to a category inside `static/notebook`. It will 
 	#### `index.html`
     
     Remove the `<div class="sidebar-header">` and its children if you want to get rid of the blue-yellow pebble like thing at the top right.
-        
-```python
-##################customize#################
-YOUR_BLOG_NAME = "Puffed\nRice\nCracker"
-YOUR_TAB_NAME = "Puffed Rice Cracker"
-DEFAULT_NOTEBOOK_NAME = "ChromePRCextension" # Chrome extension
-############################################
-```
   
 4. ### Run the app  
 
