@@ -40,6 +40,27 @@ For example, make a directory named `javascript` inside `categories` folder and 
 
 Put notebooks that don't belong to a category inside `static/notebook`. It will show up as one of the lists you see on the side bar. <b>There should be at least one notebook folder in `static/notebook`</b>.
   
+3. ### Customize the variables (Optional)
+	#### `app.py`
+	* `YOUR_BLOG_NAME` : The string you see at the top left of a page. 
+	* `YOUR_TAB_NAME` : The string you see in the tab
+	* `DEFAULT_NOTEBOOK_NAME`:
+		This is the title of the notebook that you want to show when someone first visited your web site. 
+        * Set this value as `None` and it will choose the first element of the notebook list it collected internally. 
+        * If you want to set a specific notebook, there is this ugly but working approach.  <b>Replace any blank space in the target notebook title with the string `PRC`</b>. I had to find a string that no one would use in their notebook title and also does not fiddle with jQuery. Tried characters like #,$,% and more and just settled with this string.
+
+	#### `index.html`
+    
+    Remove the `<div class="sidebar-header">` and its children if you want to get rid of the blue-yellow pebble like thing at the top right.
+        
+```python
+##################customize#################
+YOUR_BLOG_NAME = "Puffed\nRice\nCracker"
+YOUR_TAB_NAME = "Puffed Rice Cracker"
+DEFAULT_NOTEBOOK_NAME = "ChromePRCextension" # Chrome extension
+############################################
+```
+  
 4. ### Run the app  
 
 	Run `app.py` within the project directory. First time you run the app, it edits style of html files you put inside `static/categories` and `static/notebook` with `cssEditor` module and then collect notebook lists to show. 
@@ -62,3 +83,5 @@ if __name__ ==  '__main__':
 <p>• Chrome/Firefox over-scroll and bounce effect isn't working in the sidebar.
 </p>
 <p>• Turning it as robust as possible so that it doesn't crash due to only one or two things missing.  </p>
+
+
