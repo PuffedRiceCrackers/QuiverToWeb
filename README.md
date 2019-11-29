@@ -58,7 +58,7 @@ if __name__ ==  '__main__':
 
 <p>• Currently, at least one notebook inside static/notebook is required for the code to run, which isn't optimal.</p>
 <p>
-• It remembers where you left in the scrollable sidebar when you navigate through notebooks and shows exactly how you left it, but not when you navigate through categories. </p>
+• It remembers where you left in the scrollable sidebar when you click a notebook and shows the sidebar exactly how you left it. This doesn't work with categories yet. </p>
 <p>• Chrome/Firefox over-scroll and bounce effect isn't working in the sidebar.
 </p>
 <p>• Turning it as robust as possible so that it doesn't crash due to only one or two things missing.  </p>
